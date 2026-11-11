@@ -56,7 +56,7 @@ def hent_tekst(input_fil):
     )
     return data.decode("utf-8")
 
-# --- 1. PASSWORD TJEK ---
+# Password check:
 korrekt_password = "0000"
 
 indtastet_kode = input("Indtast password for at køre steganografi: ")
@@ -67,10 +67,10 @@ if indtastet_kode != korrekt_password:
 
 print("Kode godkendt!")
 
-# --- 2. SKRIV BESKED ---
+# Skriv besked:
 hemmelig_besked = input("Skriv den besked du vil skjule i billedet: ")
 
-# --- 3. GEM OG HENT ---
+# Gem og hent:
 skjul_tekst(
     "billede.png",
     hemmelig_besked,
