@@ -46,7 +46,7 @@ def hent_tekst(input_fil):
         return None
 
 
-# --- 1. PASSWORD TJEK ---
+# Password check:
 korrekt_password = "0000"
 
 indtastet_kode = input(
@@ -60,7 +60,7 @@ if indtastet_kode != korrekt_password:
 print("Kode godkendt!")
 
 
-# --- 2. FIND SKJULT BESKED ---
+# Find den skjuldte besked:
 print("\n--- STEGANOGRAFI DEKODER ---")
 
 try:
